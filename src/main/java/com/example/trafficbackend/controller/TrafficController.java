@@ -33,7 +33,7 @@ public class TrafficController {
         }
 
         event.setFine(fine);
-        event.setTimestamp(java.time.LocalDateTime.now());
+        event.setTimestamp(System.currentTimeMillis());
 
         return repo.save(event);
     }

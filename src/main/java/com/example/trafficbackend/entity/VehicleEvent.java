@@ -1,7 +1,6 @@
 package com.example.trafficbackend.entity;
 
 import jakarta.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "vehicle_events")
@@ -15,9 +14,7 @@ public class VehicleEvent {
     private double speed;
     private String zone;
     private boolean emergency;
-
-    private LocalDateTime timestamp;
-
+    private long timestamp;
     private Integer fine;
     private String status;
 
@@ -35,8 +32,8 @@ public class VehicleEvent {
     public boolean isEmergency() { return emergency; }
     public void setEmergency(boolean emergency) { this.emergency = emergency; }
 
-    public LocalDateTime getTimestamp() { return timestamp; }
-    public void setTimestamp(LocalDateTime timestamp) { this.timestamp = timestamp; }
+    public long getTimestamp() { return timestamp; }
+    public void setTimestamp(long timestamp) { this.timestamp = timestamp; }
 
     public Integer getFine() { return fine; }
     public void setFine(Integer fine) { this.fine = fine; }
