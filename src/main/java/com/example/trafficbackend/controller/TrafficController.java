@@ -24,8 +24,11 @@ public class TrafficController {
         } else if (event.getSpeed() > 100) {
             fine = 2000;
             event.setStatus("High");
-        } else {
+        } else if (event.getSpeed() > 80) {
             fine = 1000;
+            event.setStatus("Normal");
+        } else {
+            fine = 0;
             event.setStatus("Normal");
         }
 
