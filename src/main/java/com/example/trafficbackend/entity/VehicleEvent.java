@@ -35,8 +35,8 @@ public class VehicleEvent {
     public long getTimestamp() { return timestamp; }
     public void setTimestamp(long timestamp) { this.timestamp = timestamp; }
 
-    public int getFine() { return fine; }
-    public void setFine(int fine) { this.fine = fine; }
+    public Integer getFine() { return fine; }
+    public void setFine(Integer fine) { this.fine = fine; }
 
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
