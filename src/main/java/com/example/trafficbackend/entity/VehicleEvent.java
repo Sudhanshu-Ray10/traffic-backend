@@ -16,7 +16,7 @@ public class VehicleEvent {
     private String zone;
     private boolean emergency;
 
-    private LocalDateTime timestamp;   D
+    private LocalDateTime timestamp;
 
     private Integer fine;
     private String status;
